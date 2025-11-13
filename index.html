@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KonovaLova</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-left">
+      <img src="https://thephotoacademy.com/storage/815/Photo_1_the-photo-academy_How_to_learn_portrait_photography.jpg"
+        alt="Аватарка" class="avatar" />
+    </div>
+    <div class="header-right">
+      <h1>KonovaLova</h1>
+      <p>Краса ваших нігтів — наша робота!</p>
+      <a href="#services" class="btn">
+        <img src="./logo_light.png" alt="vector_lightning" /> Записатись
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>Про нас</h2>
+      <p>
+        Тут створюють красу та догляд з любов’ю — від класичного манікюру до
+        складного дизайну нігтів. У нас ви знайдете послугу для кожної нагоди!
+      </p>
+      <div class="slider">
+        <div class="image-container">
+          <img src="./images/фото1.jpg" />
+          <img src="./images/фото2.jpg" />
+          <img src="./images/фото3.jpg" />
+          <img src="./images/фото4.jpg" />
+          <img src="./images/фото5.jpg" />
+          <img src="./images/фото6.jpg" />
+          <img src="./images/фото7.jpg" />
+
+        </div>
+        <div aria-hidden="true" class="image-container">
+          <img src="./images/фото1.jpg" />
+          <img src="./images/фото2.jpg" />
+          <img src="./images/фото3.jpg" />
+          <img src="./images/фото4.jpg" />
+          <img src="./images/фото5.jpg" />
+          <img src="./images/фото6.jpg" />
+          <img src="./images/фото7.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Послуги</h2>
+
+      <div class="service-header-list">
+        <div onclick=getData(this) class="service-header" data-target="manicure">
+          <h3>Манікюр</h3>
+        </div>
+
+        <div onclick=getData(this) class="service-header" data-target="nail-extensions">
+          <h3>Нарощування</h3>
+        </div>
+
+        <div onclick=getData(this) class="service-header" data-target="design">
+          <h3>Дизайн</h3>
+        </div>
+      </div>
+
+      <div class="service-content">
+        <!-- lists appear here dynamically -->
+        <ul id="manicure" class="service-list">
+          <li>
+            <span>Класичний манікюр</span>
+            <div class="li-right">
+              <span class="price">₴???</span>
+              <button onclick="openPopup(this)">Замовити</button>
+            </div>
+          </li>
+          <li>
+            <span>Комбінований манікюр</span>
+            <div class="li-right">
+              <span class="price">₴???</span>
+              <button onclick="openPopup(this)">Замовити</button>
+            </div>
+          </li>
+          <li>
+            <span>Європейський манікюр</span>
+            <div class="li-right">
+              <span class="price">₴???</span>
+              <button onclick="openPopup(this)">Замовити</button>
+            </div>
+          </li>
+          <li>
+            <span>Французький манікюр</span>
+            <div class="li-right">
+              <span class="price">₴???</span>
+              <button onclick="openPopup(this)">Замовити</button>
+            </div>
+          </li>
+          <li>
+            <span>Весільний манікюр</span>
+            <div class="li-right">
+              <span class="price">₴???</span>
+              <button onclick="openPopup(this)">Замовити</button>
+            </div>
+          </li>
+          <li>
+            <span>Чоловічий манікюр</span>
+            <div class="li-right">
+              <span class="price">₴???</span>
+              <button onclick="openPopup(this)">Замовити</button>
+            </div>
+          </li>
+        </ul>
+
+        <ul id="nail-extensions" class="service-list">
+          <li>
+            <span>Нарощування нігтів (1-2 довжина)</span>
+            <div class="li-right">
+              <span class="price">₴???</span>
+              <button onclick="openPopup(this)">Замовити</button>
+            </div>
+          </li>
+          <li>
+            <span>Нарощування нігтів (3-4 довжина)</span>
+            <div class="li-right">
+              <span class="price">₴???</span>
+              <button onclick="openPopup(this)">Замовити</button>
+            </div>
+          </li>
+          <li>
+            <span>Корекція нарощених нігтів (1-2 довжина)</span>
+            <div class="li-right">
+              <span class="price">₴???</span>
+              <button onclick="openPopup(this)">Замовити</button>
+            </div>
+          </li>
+          <li>
+            <span>Корекція нарощених нігтів (2-3 довжина)</span>
+            <div class="li-right">
+              <span class="price">₴???</span>
+              <button onclick="openPopup(this)">Замовити</button>
+            </div>
+          </li>
+          <li>
+            <span>Нарощування 1 нігтя</span>
+            <div class="li-right">
+              <span class="price">₴???</span>
+              <button onclick="openPopup(this)">Замовити</button>
+            </div>
+          </li>
+          <li>
+            <span>Зняття нарощених нігтів</span>
+            <div class="li-right">
+              <span class="price">₴???</span>
+              <button onclick="openPopup(this)">Замовити</button>
+            </div>
+          </li>
+        </ul>
+
+        <ul id="design" class="service-list">
+          <li>
+            <span>Гель-лак</span>
+            <div class="li-right">
+              <span class="price">₴???</span>
+              <button onclick="openPopup(this)">Замовити</button>
+            </div>
+          </li>
+          <li>
+            <span>Дизайн нігтів</span>
+            <div class="li-right">
+              <span class="price">від ₴???</span>
+              <button onclick="openPopup(this)">Замовити</button>
+            </div>
+          </li>
+          <li>
+            <span>Ombré / Baby Boomer</span>
+            <div class="li-right">
+              <span class="price">₴???</span>
+              <button onclick="openPopup(this)">Замовити</button>
+            </div>
+          </li>
+          <li>
+            <span>3D-дизайн</span>
+            <div class="li-right">
+              <span class="price">₴???</span>
+              <button onclick="openPopup(this)">Замовити</button>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section id="before-after">
+      <h2>До / Після</h2>
+      <div class="carousel-wrapper">
+        <button class="arrow left" onclick="moveSlide(-1)">❮</button>
+        <div class="carousel">
+          <div class="slide">
+            <div class="image-pair">
+              <div class="photo">
+                <img src="./images/нарощення до.jpg" alt="До манікюру">
+                <span class="label before">До</span>
+              </div>
+              <div class="photo">
+                <img src="./images/нарощення після.jpg" alt="Після манікюру">
+                <span class="label after">Після</span>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-pair">
+              <div class="photo">
+                <img src="./images/2 нарощення до.jpg" alt="До манікюру">
+                <span class="label before">До</span>
+              </div>
+              <div class="photo">
+                <img src="./images/2 нарорщення після.jpg" alt="Після манікюру">
+                <span class="label after">Після</span>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-pair">
+              <div class="photo">
+                <img src="./images/3 чужа робота до клюючі нігті.jpg" alt="До манікюру">
+                <span class="label before">До</span>
+              </div>
+              <div class="photo">
+                <img src="./images/3 моя робота.jpg" alt="Після манікюру">
+                <span class="label after">Після</span>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-pair">
+              <div class="photo">
+                <img src="./images/4 робота чужого до.jpg" alt="До манікюру">
+                <span class="label before">До</span>
+              </div>
+              <div class="photo">
+                <img src="./images/4 після.jpg" alt="Після манікюру">
+                <span class="label after">Після</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="arrow right" onclick="moveSlide(1)">❯</button>
+      </div>
+    </section>
+
+
+
+
+    <script>
+      let currentSlide = 0;
+
+      function moveSlide(direction) {
+        const slides = document.querySelectorAll(".slide");
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+        document.querySelector(".carousel").style.transform = `translateX(-${currentSlide * 100}%)`;
+      }
+    </script>
+
+
+
+    <script src="./main.js"></script>
+  </main>
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>KonovaLova</h3>
+        <p class="about">
+          Ми створюємо красу з любов’ю — професійний манікюр, нарощування і дизайн нігтів.
+          Довіртесь нам, і ваші руки завжди виглядатимуть бездоганно.
+        </p>
+
+        <p class="address">м. Шептицький Буд</p>
+        <p class="phone">Телефон: <a href="tel:+380633450939">+38 (063) 345-09-39</a></p>
+
+        <div class="socials">
+          <a href="https://t.me/yourtelegram" target="_blank"><img width="50"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png"></a>
+          <a href="https://www.instagram.com/boo_julia/" target="_blank"> <img width="50"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png"
+              alt=""> </a>
+        </div>
+      </div>
+
+      <div class="footer-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4277.178407538159!2d24.226762973748645!3d50.39963498092619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4724deda29c89e39%3A0xd83c1bd02a6c87cf!2z0KfRltC60LDQs9C-!5e0!3m2!1suk!2sua!4v1762535585412!5m2!1suk!2sua"
+          width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <div class="popup-bg" id="popup-bg">
+    <div class="popup">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2 id="service-title">Замовлення</h2>
+      <input type="text" id="name" placeholder="Ваше ім’я">
+      <input type="tel" id="phone" placeholder="Ваш телефон">
+      <button onclick="submitForm()">Відправити</button>
+    </div>
+  </div>
+
+  <div id="message-popup">
+    Дякуємо! Ми з вами зв’яжемось.
+  </div>
+</body>
+
+</html>
